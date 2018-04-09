@@ -1,13 +1,13 @@
 # FoodieCallAPI
 backend for foodiecall application
 
-##FoodieCallAPI
-  #Base Urls
+##  FoodieCallAPI
+  # Base Urls
   * foodycallAPI/v1/auth/
   * foodycallAPI/v1/events/
   
-  #Expanded Urls (authentication) 
-  #POST
+  # Expanded Urls (authentication) 
+  # POST
   * ^foodiecallAPI/v1/auth/ ^login/
     * link to login with login credentials 
   * ^foodiecallAPI/v1/auth/ ^token-refresh/
@@ -25,7 +25,7 @@ backend for foodiecall application
       * confirm_password
   * ^foodiecallAPI/v1/auth/ ^obtain-token/
     * obtains token with mobile and password
-  #Expanded Urls (Events)
+  # Expanded Urls (Events)
   * ^foodiecallAPI/v1/events/ ^events/
     * Post
       * Creates new event 
