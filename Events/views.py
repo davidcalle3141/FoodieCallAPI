@@ -86,7 +86,7 @@ class AttendeeUpdate(generics.UpdateAPIView):
     permission_classes = (permissions.IsAuthenticated,)
 
     def update(self, request, *args, **kwargs):
-        partial=True
+        partial = True
         instance = self.get_object()
         event = Event.objects.get(pk=self.kwargs["pk"])
 
@@ -135,9 +135,11 @@ class ImageList(generics.ListCreateAPIView):
 class CreateVote(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
-    def post(self, request, pk, image_pk):
-        voted_by = request.user.mobile
-        data = {'image': image_pk, 'event': pk, 'voted_by': voted_by}
+    # TODO if attende belongs to event and image belongs to event vote is allowed else return bad request
+    def post(self, request, event_pk, image_pk):
+
+        voted_by = request.user.pk
+        data = {'image': image_pk, 'event': event_pk, 'voted_by': voted_by}
         serializer = VoteSerializer(data=data)
         # attendees = Attendee.objects.get(pk=self.kwargs["pk"])
         # access = False
