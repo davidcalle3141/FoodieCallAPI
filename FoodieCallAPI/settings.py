@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Testdb',
         'USER': 'MRfoodieCall',
-        'PASSWORD': 'Foodiecalldb',
+        'PASSWORD': '************',
         'HOST': 'foodiecalldbinstance.cienzppbw9ol.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
