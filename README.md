@@ -27,7 +27,7 @@ backend for foodiecall application
     * obtains token with mobile and password
   # Expanded Urls (Events)
   * ^foodiecallAPI/v1/events/ ^events/
-    * Post
+    * _Post_
       * Creates new event 
       * body must include
         * date_of_event
