@@ -27,35 +27,35 @@ backend for foodiecall application
     * obtains token with mobile and password
   # Expanded Urls (Events)
   * ^foodiecallAPI/v1/events/ ^events/
-    * _Post_
+    * **Post**
       * Creates new event 
       * body must include
         * date_of_event
         * event_name
-    * Get
+    * **Get**
       * As of now returns all events in DB in the future will only return events that have been created or attended by user
   * ^foodiecallAPI/v1/events/ ^events/$
-    * Get
+    * **Get**
       * returns detais of event $
   * ^foodiecallAPI/v1/events/ ^events/<int:pk>/images/
-    * Post
+    * **Post**
       * posts images to event pk if event pk was created by user 
       * body must include
         * image (char link to image)
-    * Get
+    * **Get**
       * returns images of event pk
   * ^foodiecallAPI/v1/events/ events/<int:pk>/attendees/
-    * Post
+    * **Post**
       * adds users to event pk only user who created event can add(invite) users to event pk
       * body must include
         * user (mobile number of user being invited)
-    * Get
+    * **Get**
       * returns users invited to event pk
   * ^foodiecallAPI/v1/events/ events/<int:pk>/attendeeUpdate/
-    * PUT
+    * **PUT**
       * if user was invited to event pk user sends put request to update is_going field to true, or leaves at false
   * ^foodiecallAPI/v1/events/ events/<int:event_pk>/images/<int:image_pk>/vote/
-    * Post
+    * **Post**
       * post a vote to image_pk in event event_pk
 
   
