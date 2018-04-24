@@ -3,10 +3,10 @@ backend for foodiecall application
 
 ##  FoodieCallAPI
   # Base Url 
-   FoodieCallAPI-dev.us-east-1.elasticbeanstalk.com
+   FoodieCallAPI-dev.us-east-2.elasticbeanstalk.com
 
-  *    FoodieCallAPI-dev.us-east-1.elasticbeanstalk.com/foodycallAPI/v1/auth/
-  *    FoodieCallAPI-dev.us-east-1.elasticbeanstalk.com/foodycallAPI/v1/events/
+  *    FoodieCallAPI-dev.us-east-2.elasticbeanstalk.com/foodycallAPI/v1/auth/
+  *    FoodieCallAPI-dev.us-east-2.elasticbeanstalk.com/foodycallAPI/v1/events/
   
   # Expanded Urls (authentication) 
   # POST
